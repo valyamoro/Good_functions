@@ -96,7 +96,7 @@ function removeElementByValue(array &$array, mixed $value): void
  */
 function removeElementByElement(array &$array, mixed $element): void
 {
-    // Проверяем существует ли переданный ЭЛЕМЕНТ в массиве, если да, то получаем ключ элемента.
+    // Проверяем существует ли переданное ЗНАЧЕНИЕ ЭЛЕМЕНТА в массиве, если да, то получаем ключ элемента.
     if (($key = \array_search($element, $array)) !== false) {
         // Удаляем найденный элемент через ключ.
         unset($array[$key]);
